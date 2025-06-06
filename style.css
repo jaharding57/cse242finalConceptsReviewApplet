@@ -1,0 +1,77 @@
+:root {
+  --bg-light: #fdfdfd;
+  --bg-dark: #1e1e1e;
+  --text-light: #222;
+  --text-dark: #eee;
+  --card-light: #fff;
+  --card-dark: #2a2a2a;
+  --border-light: #ccc;
+  --border-dark: #444;
+  --accent: #7c3aed;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  transition: background 0.3s, color 0.3s;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: background 0.3s, border 0.3s;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+  margin-top: 1rem;
+  border-top: 1px dashed var(--border-light);
+  padding-top: 1rem;
+}
+
+button, select {
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem 1rem 0;
+  padding: 0.4rem 0.8rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#counter {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.dark .card {
+  background: var(--card-dark);
+  border: 1px solid var(--border-dark);
+}
+
+body.dark .answer {
+  border-top-color: var(--border-dark);
+}
+
+.bookmark {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-left: 10px;
+}

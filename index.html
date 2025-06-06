@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flashcard Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🧠 Flashcards</h1>
+  <label for="deckSelect">Choose a deck:</label>
+  <select id="deckSelect">
+    <option value="llms">LLMs</option>
+    <option value="diffusion">Diffusion</option>
+  </select>
+  <button onclick="prevCard()">⏮️ Prev</button>
+  <button onclick="nextCard()">Next ⏭️</button>
+  <button onclick="toggleAnswer()">💡 Show/Hide</button>
+  <button onclick="toggleDarkMode()">🌓 Theme</button>
+  <button onclick="toggleBookmark()">🔖 Bookmark</button>
+  <button id="toggleBookmarkView" onclick="toggleBookmarkView()">🔖 Show Bookmarked</button>
+  <div id="counter"></div>
+  <div class="card" id="flashcard">
+    <div class="question" id="question"></div>
+    <div class="answer" id="answer"></div>
+    <div class="bookmark" id="bookmarkLabel"></div>
+  </div>
+
+  <script src="decks/llms.js"></script>
+  <script src="decks/diffusion.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
