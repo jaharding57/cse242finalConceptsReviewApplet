@@ -1,6 +1,7 @@
 let decks = {
   llms,
-  diffusion
+  diffusion,
+  frm_sample_tsts,
 };
 
 let currentDeck = "llms";
