@@ -1,7 +1,7 @@
 let decks = {
   llms,
   diffusion,
-  frm_sample_tsts,
+  frm_sample_tsts
 };
 
 let currentDeck = "llms";
@@ -104,6 +104,11 @@ document.addEventListener("keydown", (e) => {
   else if (e.key.toLowerCase() === "b") toggleBookmark();
   else if (e.key.toLowerCase() === "d") toggleDarkMode();
   else if (e.key.toLowerCase() === "v") toggleBookmarkView();
+  else if (e.code === "Space") {
+    e.preventDefault(); // optional: prevent scrolling the page
+    toggleAnswer();
+  }
+
 });
 
 renderCard();
