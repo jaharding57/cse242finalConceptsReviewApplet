@@ -1,4 +1,4 @@
-[
+const dl_flashcards = [
   {
     "q": "What is the purpose of activation functions in neural networks?",
     "a": "They introduce non-linearities, enabling networks to model complex functions. Examples include Sigmoid, tanh, and ReLU."
