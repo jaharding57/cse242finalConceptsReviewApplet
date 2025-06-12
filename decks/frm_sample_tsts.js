@@ -290,6 +290,19 @@ const frm_sample_tsts = [
   {
     "q": "If a model is overfitting, will increasing the number of parameters help generalization?",
     "a": "No — increasing model complexity typically worsens overfitting. Reducing parameters or using regularization is more effective in this case."
-  }
+  },
+  {
+    "q": "Conceptually, how do we go from maximizing margin to minimizing norm of w?",
+    "a": "Maximizing margin = minimizing 1/margin = minimizing ||w|| under the constraints that all instances are correctly classified."
+  },
+  {
+    "q": "In SVMs, what are 2 interesting properties about the optimal w?",
+    "a": "i) opt w orthogonal to H. ii) w^T.x = {-1,1} only for s.v.s iii)"
+  },
+  {
+    "q": "In SVMs, one more interesting properties about optimal w?",
+    "a": "formula for w can be represented as a lin. combo. of the data: w*=sum(alpha_i*y_i*x_i); alpha_i only non-zero for the s.v.s"
+  },
+
 
 ];
